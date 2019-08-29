@@ -221,7 +221,7 @@ if settings.startup["palette-cleanser-enable-thick-wires"].value then
     if settings.startup["palette-cleanser-signal-wire-mode"].value == choices.wire_mode.redblue then
         -- use thicker wires, and replace green with blue
         data.raw["item"]["green-wire"].icon =pcgraphics.."/icons/blue-wire.png"
-        data.raw["utility-sprites"].default.red_wire.filename = pcgraphics.."/entity/signal-wire/entity/signal-wire/red-wire-thick.png"
+        data.raw["utility-sprites"].default.red_wire.filename = pcgraphics.."/entity/signal-wire/red-wire-thick.png"
         data.raw["utility-sprites"].default.red_wire.hr_version.filename = pcgraphics.."/entity/signal-wire/hr-red-wire-thick.png"
         data.raw["utility-sprites"].default.green_wire.filename = pcgraphics.."/entity/signal-wire/blue-wire-thick.png"
         data.raw["utility-sprites"].default.green_wire.hr_version.filename = pcgraphics.."/entity/signal-wire/hr-blue-wire-thick.png"
