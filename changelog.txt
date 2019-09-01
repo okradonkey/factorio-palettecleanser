@@ -3,7 +3,8 @@ Version: 0.17.8
 Date: 2019-09-01
   Features:
     - Added technology GUI color changes
-    - Added prerendered sprites and icons for stack inserter and filter stack inserter
+    - Added prerendered sprites and icons for stack inserter and filter stack
+      inserter
     - Added option to preserve wire colors during mouseover highlighting
 ---------------------------------------------------------------------------------------------------
 Version: 0.17.7
