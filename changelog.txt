@@ -1,8 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.17.8
+Date: 2019-09-01
+  Features:
+    - Added technology GUI color changes
+    - Added prerendered sprites and icons for stack inserter and filter stack inserter
+    - Added option to preserve wire colors during mouseover highlighting
+---------------------------------------------------------------------------------------------------
 Version: 0.17.7
 Date: 2019-08-29
   Bugfixes:
-    - Fixed error with red signal wire sprite path
+    - Fixed error with red signal wire sprite path (thanks gnosis!)
   Other:
     - Added github tags
     - Fixed word wrap in changelog

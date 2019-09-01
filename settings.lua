@@ -77,10 +77,24 @@ data:extend{
     },
     {
         type = "bool-setting",
+        name = "palette-cleanser-technology-gui",
+        setting_type = "startup",
+        default_value = true,
+        order = "c-e"
+    },
+    {
+        type = "bool-setting",
         name = "palette-cleanser-enable-thick-wires",
         setting_type = "startup",
         default_value = true,
         order = "d-a"
+    },
+    {
+        type = "bool-setting",
+        name = "palette-cleanser-preserve-wire-color-highlight",
+        setting_type = "startup",
+        default_value = true,
+        order = "d-b"
     },
     {
         type = "string-setting",
@@ -88,7 +102,7 @@ data:extend{
         setting_type = "startup",
         default_value = choices.wire_mode.redblue,
         allowed_values = choices.wire_mode,
-        order = "d-b"
+        order = "d-c"
     }
 
 }
