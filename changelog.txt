@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.17.9
+Date: 2019-??-??
+  Features:
+    - Slight adjustment to technology GUI color changes
+  Info:
+    - Change mod description for better search visibility on mod portal
+    - Specified icon_size in preparation for planned 64 px icons
+---------------------------------------------------------------------------------------------------
 Version: 0.17.8
 Date: 2019-09-01
   Features:
