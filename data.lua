@@ -107,14 +107,16 @@ if settings.startup["palette-cleanser-enable-fluids"].value then
     -- (https://forums.factorio.com/viewtopic.php?t=60558)
     -- barrelling icons are adjusted in data-updates.lua
 
+    data.raw["fluid"]["light-oil"].icon_size = 32
     data.raw["fluid"]["light-oil"].icons = {
         {
             icon = pcgraphics.."/icons/generic-fluid.png",
-            -- icon_size = 32, --might be mandatory
+            icon_size = 32,
             tint = active_scheme.light_oil_base_color
         },
 
     }
+    data.raw["recipe"]["heavy-oil-cracking"].icon_size = 32
     data.raw["recipe"]["heavy-oil-cracking"].icons = {
         {   
             -- Use a blank base for your icon to prevent scaling problems in crafting menu
@@ -128,22 +130,26 @@ if settings.startup["palette-cleanser-enable-fluids"].value then
         },
         {
             icon = data.raw["fluid"]["heavy-oil"].icon,
+            icon_size = 32,
             scale = 0.75,
             shift = {0,-4}
         },
         {
             icon = pcgraphics.."/icons/generic-fluid.png",
+            icon_size = 32,
             tint = active_scheme.light_oil_base_color,
             scale = 0.5,
             shift = {-10,8}
         },
         {
             icon = pcgraphics.."/icons/generic-fluid.png",
+            icon_size = 32,
             tint = active_scheme.light_oil_base_color,
             scale = 0.5,
             shift = {10,8}
         }
     }
+    data.raw["recipe"]["light-oil-cracking"].icon_size = 32
     data.raw["recipe"]["light-oil-cracking"].icons = {
         {
             icon = pcgraphics.."/icons/AlmostBlank32.png",
@@ -151,27 +157,33 @@ if settings.startup["palette-cleanser-enable-fluids"].value then
         },
         {
             icon = pcgraphics.."/icons/generic-fluid.png",
+            icon_size = 32,
             tint = active_scheme.light_oil_base_color,
             scale = 0.75,
             shift = {0,-4}
         },
         {
             icon = data.raw["fluid"]["petroleum-gas"].icon,
+            icon_size = 32,
             scale = 0.4375,
             shift = {-9,11}
         },
         {
             icon = data.raw["fluid"]["petroleum-gas"].icon,
+            icon_size = 32,
             scale = 0.4375,
             shift = {9,11}
         }
     }
+    data.raw["recipe"]["solid-fuel-from-light-oil"].icon_size = 32
     data.raw["recipe"]["solid-fuel-from-light-oil"].icons = {
         {
             icon = data.raw["item"]["solid-fuel"].icon,
+            icon_size = 32,
         },
         {
             icon = pcgraphics.."/icons/generic-fluid.png",
+            icon_size = 32,
             tint = active_scheme.light_oil_base_color,
             scale = 0.75,
             shift = {9,5}
@@ -183,32 +195,44 @@ end
 -- AMMO
 if settings.startup["palette-cleanser-enable-ammo"].value then
     data.raw["ammo"]["explosive-cannon-shell"].icon = pcgraphics.."/icons/explosive-cannon-shell.png"
+    data.raw["ammo"]["explosive-cannon-shell"].icon_size = 32
     data.raw["ammo"]["explosive-uranium-cannon-shell"].icon = pcgraphics.."/icons/explosive-uranium-cannon-shell.png"
+    data.raw["ammo"]["explosive-uranium-cannon-shell"].icon_size = 32
     data.raw["capsule"]["cluster-grenade"].icon = pcgraphics.."/icons/cluster-grenade.png"
+    data.raw["capsule"]["cluster-grenade"].icon_size = 32
     data.raw["projectile"]["cluster-grenade"].animation.filename = pcgraphics.."/icons/cluster-grenade.png"
 end
 
 -- CIRCUITS
 if settings.startup["palette-cleanser-enable-circuits"].value then
     data.raw["item"]["electronic-circuit"].icon = pcgraphics.."/icons/electronic-circuit.png"
+    data.raw["item"]["electronic-circuit"].icon_size = 32
     data.raw["item"]["advanced-circuit"].icon = pcgraphics.."/icons/advanced-circuit.png"
+    data.raw["item"]["advanced-circuit"].icon_size = 32
     data.raw["item"]["processing-unit"].icon = pcgraphics.."/icons/processing-unit.png"
+    data.raw["item"]["processing-unit"].icon_size = 32
 end
 
 -- LOGISTICS
 if settings.startup["palette-cleanser-enable-logistics"].value then
     data.raw["item"]["logistic-chest-active-provider"].icon = pcgraphics.."/icons/logistic-chest-active-provider.png"
+    data.raw["item"]["logistic-chest-active-provider"].icon_size = 32
     data.raw["logistic-container"]["logistic-chest-active-provider"].icon = pcgraphics.."/icons/logistic-chest-active-provider.png"
+    data.raw["logistic-container"]["logistic-chest-active-provider"].icon_size = 32
     data.raw["logistic-container"]["logistic-chest-active-provider"].animation.layers[1].filename =pcgraphics.."/entity/logistic-chest/logistic-chest-active-provider.png"
     data.raw["logistic-container"]["logistic-chest-active-provider"].animation.layers[1].hr_version.filename =pcgraphics.."/entity/logistic-chest/hr-logistic-chest-active-provider.png"
 
     data.raw["item"]["logistic-chest-requester"].icon = pcgraphics.."/icons/logistic-chest-requester.png"
+    data.raw["item"]["logistic-chest-requester"].icon_size = 32
     data.raw["logistic-container"]["logistic-chest-requester"].icon = pcgraphics.."/icons/logistic-chest-requester.png"
+    data.raw["logistic-container"]["logistic-chest-requester"].icon_size = 32
     data.raw["logistic-container"]["logistic-chest-requester"].animation.layers[1].filename =pcgraphics.."/entity/logistic-chest/logistic-chest-requester.png"
     data.raw["logistic-container"]["logistic-chest-requester"].animation.layers[1].hr_version.filename =pcgraphics.."/entity/logistic-chest/hr-logistic-chest-requester.png"
 
     data.raw["item"]["filter-inserter"].icon = pcgraphics.."/icons/filter-inserter.png"
+    data.raw["item"]["filter-inserter"].icon_size = 32
     data.raw["inserter"]["filter-inserter"].icon = pcgraphics.."/icons/filter-inserter.png"
+    data.raw["inserter"]["filter-inserter"].icon_size = 32
     data.raw["inserter"]["filter-inserter"].hand_base_picture.filename =pcgraphics.."/entity/filter-inserter/filter-inserter-hand-base.png"
     data.raw["inserter"]["filter-inserter"].hand_base_picture.hr_version.filename =pcgraphics.."/entity/filter-inserter/hr-filter-inserter-hand-base.png"
     data.raw["inserter"]["filter-inserter"].hand_closed_picture.filename =pcgraphics.."/entity/filter-inserter/filter-inserter-hand-closed.png"
@@ -222,7 +246,9 @@ if settings.startup["palette-cleanser-enable-logistics"].value then
     -- data.raw["corpse"]["filter-inserter-remnants"].animation.hr_version.filename =pcgraphics.."/entity/filter-inserter/remnants/hr-filter-inserter-remnants.png"
 
     data.raw["item"]["stack-inserter"].icon = pcgraphics.."/icons/stack-inserter.png"
+    data.raw["item"]["stack-inserter"].icon_size = 32
     data.raw["inserter"]["stack-inserter"].icon = pcgraphics.."/icons/stack-inserter.png"
+    data.raw["inserter"]["stack-inserter"].icon_size = 32
     data.raw["inserter"]["stack-inserter"].hand_base_picture.filename =pcgraphics.."/entity/stack-inserter/stack-inserter-hand-base.png"
     data.raw["inserter"]["stack-inserter"].hand_base_picture.hr_version.filename =pcgraphics.."/entity/stack-inserter/hr-stack-inserter-hand-base.png"
     data.raw["inserter"]["stack-inserter"].hand_closed_picture.filename =pcgraphics.."/entity/stack-inserter/stack-inserter-hand-closed.png"
@@ -233,7 +259,9 @@ if settings.startup["palette-cleanser-enable-logistics"].value then
     data.raw["inserter"]["stack-inserter"].platform_picture.sheet.hr_version.filename =pcgraphics.."/entity/stack-inserter/hr-stack-inserter-platform.png"
 
     data.raw["item"]["stack-filter-inserter"].icon = pcgraphics.."/icons/stack-filter-inserter.png"
+    data.raw["item"]["stack-filter-inserter"].icon_size = 32
     data.raw["inserter"]["stack-filter-inserter"].icon = pcgraphics.."/icons/stack-filter-inserter.png"
+    data.raw["inserter"]["stack-filter-inserter"].icon_size = 32
     data.raw["inserter"]["stack-filter-inserter"].hand_base_picture.filename =pcgraphics.."/entity/stack-filter-inserter/stack-filter-inserter-hand-base.png"
     data.raw["inserter"]["stack-filter-inserter"].hand_base_picture.hr_version.filename =pcgraphics.."/entity/stack-filter-inserter/hr-stack-filter-inserter-hand-base.png"
     data.raw["inserter"]["stack-filter-inserter"].hand_closed_picture.filename =pcgraphics.."/entity/stack-filter-inserter/stack-filter-inserter-hand-closed.png"
@@ -268,8 +296,9 @@ if settings.startup["palette-cleanser-enable-thick-wires"].value then
 
     if settings.startup["palette-cleanser-signal-wire-mode"].value == choices.wire_mode.redblue then
         -- use thicker wires, and replace green with blue
-        data.raw["item"]["green-wire"].icon =pcgraphics.."/icons/blue-wire.png"
-        
+        data.raw["item"]["green-wire"].icon = pcgraphics.."/icons/blue-wire.png"
+        data.raw["item"]["green-wire"].icon_size = 32
+
         data.raw["utility-sprites"].default.red_wire.filename = pcgraphics.."/entity/signal-wire/red-wire-thick.png"
         data.raw["utility-sprites"].default.red_wire.hr_version.filename = pcgraphics.."/entity/signal-wire/hr-red-wire-thick.png"
         if bhighlight then
@@ -292,7 +321,8 @@ if settings.startup["palette-cleanser-enable-thick-wires"].value then
 
     elseif settings.startup["palette-cleanser-signal-wire-mode"].value == choices.wire_mode.bluegreen then
         -- use thicker wires, and replace red with blue
-        data.raw["item"]["red-wire"].icon =pcgraphics.."/icons/blue-wire.png"
+        data.raw["item"]["red-wire"].icon = pcgraphics.."/icons/blue-wire.png"
+        data.raw["item"]["red-wire"].icon_size = 32
 
         data.raw["utility-sprites"].default.red_wire.filename = pcgraphics.."/entity/signal-wire/blue-wire-thick.png"
         data.raw["utility-sprites"].default.red_wire.hr_version.filename = pcgraphics.."/entity/signal-wire/hr-blue-wire-thick.png"
@@ -340,7 +370,8 @@ if settings.startup["palette-cleanser-enable-thick-wires"].value then
 else -- don't use thicker wires
     if settings.startup["palette-cleanser-signal-wire-mode"].value == choices.wire_mode.redblue then
         -- replace green with blue
-        data.raw["item"]["green-wire"].icon =pcgraphics.."/icons/blue-wire.png"
+        data.raw["item"]["green-wire"].icon = pcgraphics.."/icons/blue-wire.png"
+        data.raw["item"]["green-wire"].icon_size = 32
 
         if bhighlight then
             data.raw["utility-sprites"].default.red_wire_hightlight.filename = pcgraphics.."/entity/signal-wire/red-wire-highlight.png"
@@ -356,7 +387,8 @@ else -- don't use thicker wires
 
     elseif settings.startup["palette-cleanser-signal-wire-mode"].value == choices.wire_mode.bluegreen then
         -- replace red with blue
-        data.raw["item"]["red-wire"].icon =pcgraphics.."/icons/blue-wire.png"
+        data.raw["item"]["red-wire"].icon = pcgraphics.."/icons/blue-wire.png"
+        data.raw["item"]["red-wire"].icon_size = 32
 
         data.raw["utility-sprites"].default.red_wire.filename = pcgraphics.."/entity/signal-wire/blue-wire.png"
         data.raw["utility-sprites"].default.red_wire.hr_version.filename = pcgraphics.."/entity/signal-wire/hr-blue-wire.png"
