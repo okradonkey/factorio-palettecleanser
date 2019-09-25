@@ -7,5 +7,5 @@
   "homepage": "",
   "contact": "okradonkey@disroot.org",
   "description": "Adjusts game colors to accommodate colorblind players.",
-  "dependencies": ["base"]
+  "dependencies": ["base", "! ColorblindCircuitNetwork"]
 }
