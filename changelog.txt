@@ -1,4 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.17.9
+Date: 2019-09-25
+  Features:
+    - Slight adjustment to technology GUI color changes
+    - Add info panel signal color indicator background (thanks to
+        ColorblindCircuitNetwork for this idea!)
+  Info:
+    - Change mod description for better search visibility on mod portal
+    - Specified icon_size in preparation for rollout of 64 px icons
+    - Mark ColorblindCircuitNetwork as incompatible
+---------------------------------------------------------------------------------------------------
 Version: 0.17.8
 Date: 2019-09-01
   Features:
